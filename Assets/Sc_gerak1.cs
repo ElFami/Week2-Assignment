@@ -17,7 +17,6 @@ public class NewBehaviourScript : MonoBehaviour
 
     void Update()
     {
-    
         transform.position = Vector3.MoveTowards(transform.position, target.position, kecepatan * Time.deltaTime);
         if (Vector3.Distance(transform.position, target.position) < 0.1f)
         {
